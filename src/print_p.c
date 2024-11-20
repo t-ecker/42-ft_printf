@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   print_p.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 13:10:49 by tecker            #+#    #+#             */
-/*   Updated: 2024/04/03 13:46:00 by tecker           ###   ########.fr       */
+/*   Updated: 2024/11/20 01:00:15 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
 static int	ft_putpointerhex(unsigned long n)
 {

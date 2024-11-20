@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_u.c                                          :+:      :+:    :+:   */
+/*   print_s.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/19 13:08:48 by tecker            #+#    #+#             */
-/*   Updated: 2024/04/16 20:20:54 by tecker           ###   ########.fr       */
+/*   Created: 2024/03/19 13:07:05 by tecker            #+#    #+#             */
+/*   Updated: 2024/11/20 01:00:17 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
-int	ft_putnbr_unsigned(unsigned int n)
+int	ft_putstr(char *c)
 {
-	int	len;
+	int	i;
 
-	len = 0;
-	if (n > 9)
-	{
-		len += ft_putnbr_unsigned(n / 10);
-	}
-	len += ft_putchar((n % 10) + '0');
-	return (len);
+	i = 0;
+	if (!c)
+		return (ft_putstr("(null)"));
+	while (c[i])
+		i++;
+	check(write(1, c, i), 0);
+	return (i);
 }

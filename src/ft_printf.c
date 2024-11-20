@@ -3,14 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 12:11:00 by tecker            #+#    #+#             */
-/*   Updated: 2024/04/16 20:28:57 by tecker           ###   ########.fr       */
+/*   Updated: 2024/11/20 01:07:16 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
+
+int	check(int i, int b)
+{
+	static int	result;
+
+	if (b == 1)
+		result = 1;
+	if (i == -1 || result == -1)
+		result = -1;
+	else
+		result = 1;
+	return (result);
+}
 
 int	print_arg(char c, va_list args)
 {

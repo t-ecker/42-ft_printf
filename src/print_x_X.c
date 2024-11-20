@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   print_x_X.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 13:09:51 by tecker            #+#    #+#             */
-/*   Updated: 2024/04/15 17:07:58 by tecker           ###   ########.fr       */
+/*   Updated: 2024/11/20 01:00:21 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
 int	ab(unsigned int n, char c)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   print_i_d.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 13:08:00 by tecker            #+#    #+#             */
-/*   Updated: 2024/04/16 20:34:19 by tecker           ###   ########.fr       */
+/*   Updated: 2024/11/20 01:00:12 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
 int	ft_putnbr(int n)
 {

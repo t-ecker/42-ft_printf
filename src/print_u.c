@@ -1,20 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_c.c                                          :+:      :+:    :+:   */
+/*   print_u.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tecker <tecker@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tomecker <tomecker@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/19 13:06:50 by tecker            #+#    #+#             */
-/*   Updated: 2024/04/16 15:17:28 by tecker           ###   ########.fr       */
+/*   Created: 2024/03/19 13:08:48 by tecker            #+#    #+#             */
+/*   Updated: 2024/11/20 01:00:19 by tomecker         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
-int	ft_putchar(char c)
+int	ft_putnbr_unsigned(unsigned int n)
 {
-	if (check(1, 0) == 1)
-		check(write(1, &c, 1), 0);
-	return (1);
+	int	len;
+
+	len = 0;
+	if (n > 9)
+	{
+		len += ft_putnbr_unsigned(n / 10);
+	}
+	len += ft_putchar((n % 10) + '0');
+	return (len);
 }
